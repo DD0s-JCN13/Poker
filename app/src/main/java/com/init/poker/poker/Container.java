@@ -12,7 +12,10 @@ public class Container {
     public void Randomize(){
         Random ran = new Random();
         for(int i=0;i<52;i++){
-            int R = ran.nextInt(52);
+            int R;
+            do{
+                R = ran.nextInt(52);
+            }while(R==i);
             Cards tmp = card[i];
             card[i] = card[R];
             card[R] = card[i];

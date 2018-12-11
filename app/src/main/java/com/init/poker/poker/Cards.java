@@ -6,7 +6,7 @@ public class Cards {
         this.number = number;
     }
     public String get(){
-        return suit[number/13]+(number%13)+1+"";
+        return (number%13)+1+""+suit[number/13];
     }
 
 }

@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    Container cont = new Container();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         recview.setLayoutManager(new LinearLayoutManager(this));
         recview.setAdapter(new CardAdapter());
     }
-    Container cont = new Container();
     public void Shuffle(View v){
         cont.Randomize();
     }
